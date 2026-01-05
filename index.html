@@ -3,16 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manitseptikss - İndir</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Oyun İndir</title>
+    <style>
+        /* CSS KODLARINI BURAYA GÖMDÜK */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            /* DİKKAT: Resim adının 'alps.png' olduğundan eminsen burası çalışır */
+            background-image: url('alps.png'); 
+            
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Eğer resim yüklenmezse arkada düz gri renk olsun diye güvenlik önlemi */
+        body {
+            background-color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Yazılar okunsun diye siyah şeffaf kutu */
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .btn-indir {
+            display: inline-block;
+            padding: 20px 50px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid #28a745;
+        }
+
+        .btn-indir:hover {
+            background-color: transparent;
+            color: #28a745;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Manitseptikss</h1>
-        <p>İndirecek olduğunuz oyun, çok seven bir çocuğun sevgisini dışa vurmaya çalışma yöntemidir Sevgilerimle Alperen...</p>
+        <h1>OYUNUMUN ADI</h1>
+        <p>Hukuk Fakültesi öğrencisinden kendi geliştirdiğim oyun.</p>
         
-        <a href="https://drive.google.com/file/d/1-wRrzPlHbbbHydggrDPtZdxykTvEzfdc/view?usp=drive_link" class="btn-indir" target="_blank">OYUNU İNDİR (APK)</a>
+        <a href="#" class="btn-indir" target="_blank">HEMEN İNDİR</a>
     </div>
 
 </body>
