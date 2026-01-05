@@ -1,0 +1,66 @@
+/* Tüm sayfanın temel ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* ARKA PLAN RESMİ AYARLARI */
+    /* 'bg.jpg' yerine yüklediğin resmin tam adını yaz */
+    background-image: url('alps.png'); 
+    
+    /* Resmin sayfayı tamamen kaplaması ve tekrar etmemesi için */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Kaydırınca resim sabit kalır, şık durur */
+    
+    /* Yazıların rengi beyaz olsun */
+    color: white;
+    
+    /* İçeriği ekranın tam ortasına hizalamak için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tam ekran yüksekliği */
+}
+
+/* İçerik kutusunun tasarımı */
+.container {
+    text-align: center;
+    /* Arka plan resminin üzerine yarı saydam siyah bir katman atar ki yazılar okunsun */
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 40px;
+    border-radius: 15px; /* Köşeleri yuvarlatır */
+    max-width: 80%; /* Mobilde çok geniş olmasın */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* İndirme Butonunun Tasarımı */
+.btn-indir {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745; /* Yeşil renk */
+    color: white;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 50px; /* Yuvarlak buton */
+    transition: background-color 0.3s; /* Üzerine gelince yumuşak geçiş */
+}
+
+/* Mouse ile butonun üzerine gelince */
+.btn-indir:hover {
+    background-color: #218838; /* Daha koyu yeşil olur */
+    transform: scale(1.05); /* Hafifçe büyür */
+}
