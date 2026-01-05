@@ -6,7 +6,7 @@ body {
     
     /* ARKA PLAN RESMİ AYARLARI */
     /* 'bg.jpg' yerine yüklediğin resmin tam adını yaz */
-    background-image: url('alps.jpg'); 
+    background-image: url(alps.jpg); 
     
     /* Resmin sayfayı tamamen kaplaması ve tekrar etmemesi için */
     background-size: cover;
